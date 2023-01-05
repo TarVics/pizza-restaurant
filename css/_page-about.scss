@@ -1,0 +1,42 @@
+@import "@common";
+
+#page-about {
+  padding: 100px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  .left {
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .text {
+      width: 474px;
+      @include base-font(25px, 2px);
+      line-height: 40px;
+    }
+
+    .button {
+      margin-bottom: 50px;
+      width: 129px;
+      @include base-font-center(17px, 1px);
+      line-height: 42px;
+      color: $high-color;
+      outline: 1px solid $gray-color;
+
+      &:hover {
+        outline: 2px solid $high-color;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .image {
+    width: 513px;
+    height: 743px;
+    border-radius: 5px;
+  }
+}

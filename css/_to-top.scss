@@ -1,0 +1,40 @@
+@import "@common";
+
+.back-to-top-wrapper {
+  position: absolute;
+  top: 100vh;
+  right: 1.5rem;
+  bottom: 0;
+  width: 3em;
+  pointer-events: none;
+
+  .back-to-top-link {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2rem;
+    line-height: 3rem;
+    text-align: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: $text-color;
+
+    position: sticky;
+    pointer-events: all;
+    top: calc(100vh - 4.25rem);
+    color: $bg-color;
+    transform: rotate(-90deg);
+    filter: drop-shadow(3px 6px 9px rgba(0, 0, 0, 0.25));
+
+    &:hover {
+      text-decoration: none;
+      color: $high-color;
+    }
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}

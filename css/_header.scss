@@ -1,0 +1,18 @@
+@import "@common";
+
+header {
+  padding: 0 30px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  span {
+    @include base-font-center(24px, 1px);
+  }
+
+  nav > a {
+    margin-left: 30px;
+    @include base-font-center(20px, 1px);
+  }
+}

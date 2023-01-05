@@ -1,0 +1,31 @@
+@import "@common";
+
+#page-contact {
+  padding: 100px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 50px;
+
+  .body {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+
+    .image {
+      border-radius: 5px;
+    }
+
+    .text {
+      width: 800px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      @include base-font(25px, 2px);
+      line-height: 40px;
+      gap: 30px;
+    }
+  }
+}

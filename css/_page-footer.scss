@@ -1,0 +1,52 @@
+@import "@common";
+
+#page-footer {
+  .body {
+    position: relative;
+    height: 953px;
+    filter: drop-shadow(3px 6px 9px rgba(0, 0, 0, 0.25));
+    background-image: url("../img/wood-2045380_1920.png");
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .intro-top {
+      position: absolute;
+      left: 50%;
+      top: -65%;
+      transform: translateX(-50%);
+      filter: drop-shadow(18px 11px 15px rgba(0, 0, 0, 0.61));
+    }
+
+    .main-header {
+      margin-top: 380px;
+    }
+
+    .icons {
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+
+      .icon {
+        cursor: pointer;
+        width: 61px;
+        height: 59px;
+        filter: drop-shadow(3px 6px 9px rgba(0, 0, 0, 0.25));
+
+        &:hover {
+          filter: drop-shadow(3px 6px 5px rgba(0, 0, 0, 0.5));
+        }
+      }
+    }
+  }
+
+  .footer {
+    height: 48px;
+    line-height: 48px;
+    @include base-font-center(24px, 1px);
+  }
+}
