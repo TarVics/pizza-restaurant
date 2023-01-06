@@ -10,7 +10,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-image-resize": "^0.13.1"
   },
   "dependencies": {
     "gulp-copy": "^4.0.1",
