@@ -11,6 +11,8 @@
   gap: 60px;
   background-image: linear-gradient(180deg, rgba(39, 39, 39, 0.1) 0%, rgba(0, 0, 0, 0.13) 13%, $bg-color 100%),
     url("../img/wood-2045380_1920.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   filter: drop-shadow(3px 6px 9px rgba(0, 0, 0, 0.25));
   overflow: hidden;
 
